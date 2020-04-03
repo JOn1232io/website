@@ -26,14 +26,19 @@ const Layout = ({ children }) => {
     <div className="font-sans bg-light text-dark flex flex-col min-h-screen">
       <div className="flex-1 flex flex-col">
         <Header className="flex-shrink-0" />
-        <main className="flex-1" id="main">
+        <main className="flex-1" id="main" style={{ margin: "3rem 0 0 0" }}>
           {children}
         </main>
       </div>
 
-      <div className="pin-b">
-        <footer>Footer</footer>
-      </div>
+      <footer
+        className={`footer bg-dark text-light h-12 p-4 flex justify-between items-center`}
+        style={{
+          boxShadow: `inset 0 0.125rem 0.25rem -0.25rem black`,
+        }}
+      >
+        <p className>&copy; {new Date().getFullYear()}</p>
+      </footer>
     </div>
   );
 };
