@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Fighting COVID-19`,
-    description: `Official website for the Fighting COVID-19 movement.`,
-    author: `Fighting COVID-19`,
+    title: `Project YCRO`,
+    description: `Official website for Project YCRO.`,
+    author: `Project YCRO`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,8 +11,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Fighting COVID-19`,
-        short_name: `Fighting COVID`,
+        name: `Project YCRO`,
+        short_name: `YCRO`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
