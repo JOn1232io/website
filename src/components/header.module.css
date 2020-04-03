@@ -1,4 +1,134 @@
-.header {
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: white;
+  padding-right: 0;
+  display: grid;
+  grid-template-columns: 1fr 4.5rem;
+  box-shadow: 0 0.125rem 0.25rem -0.25rem black;
+}
+
+header .name {
+  @apply text-highlight;
+  display: flex;
+  align-items: center;
+  justify-self: flex-start;
+  margin-left: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.25rem;
+}
+
+header .name h1 {
+  font-size: 20px;
+}
+
+header nav {
+  margin-right: 1rem;
+  flex: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+header .nav__link {
+  @apply text-highlight;
+  height: 3rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s ease;
+  display: none;
+}
+
+header .nav__link:hover {
+  @apply bg-highlight text-white;
+  /* color: whitesmoke; */
+}
+
+header nav .hamburger {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  grid-column-end: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 3rem;
+}
+header nav .hamburger__line {
+  @apply bg-highlight;
+  display: block;
+  width: 2.5rem;
+  height: 0.25rem;
+  margin: 6px 0;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+}
+
+header nav.active {
+  @apply bg-dark;
+  position: fixed;
+  top: 0;
+  right: -1rem;
+  width: 15rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+header nav.active .nav__link {
+  display: flex;
+}
+header nav.active .hamburger {
+  @apply bg-dark;
+  flex-direction: row;
+  align-self: flex-end;
+  width: 2.5rem;
+  margin-right: 1rem;
+}
+header nav.active .hamburger__line:nth-child(2) {
+  display: none;
+}
+header nav.active .hamburger__line:nth-child(1) {
+  position: absolute;
+  transform: rotate(45deg) scaleX(0.75);
+}
+header nav.active .hamburger__line:nth-child(3) {
+  transform: rotate(-45deg) scaleX(0.75);
+}
+header nav.active::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100vw - 15rem);
+  height: 100vh;
+  background-color: black;
+  opacity: 0.5;
+}
+
+@screen md {
+  header {
+    grid-template-columns: minmax(25rem, 1fr) 2fr;
+  }
+
+  header .nav .hamburger {
+    display: none;
+  }
+
+  header .nav__link {
+    display: flex;
+  }
+}
+
+/* } */
+
+/* .header {
   @apply bg-light flex flex-wrap items-center;
   @apply px-6 py-6 font-sans w-full;
   min-height: 70px;
@@ -56,4 +186,4 @@
   .nav a {
     @apply mx-4 my-0;
   }
-}
+} */
