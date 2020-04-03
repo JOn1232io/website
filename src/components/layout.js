@@ -26,7 +26,9 @@ const Layout = ({ children }) => {
     <div className="font-sans bg-light text-dark flex flex-col min-h-screen">
       <div className="flex-1 flex flex-col">
         <Header className="flex-shrink-0" />
-        <main id="main">{children}</main>
+        <main className="flex-1" id="main">
+          {children}
+        </main>
       </div>
 
       <div className="pin-b">
