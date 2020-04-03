@@ -1,0 +1,59 @@
+.header {
+  @apply bg-light flex flex-wrap items-center;
+  @apply px-6 py-6 font-sans w-full;
+  min-height: 70px;
+}
+
+.hamburger-container {
+  display: block;
+  padding: 5px 0px;
+}
+@screen md {
+  .hamburger-container {
+    display: none !important;
+  }
+}
+
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
+  width: 35px;
+  height: 3px;
+  @apply text-dark;
+}
+
+.nav {
+  @apply mx-auto;
+  @apply w-full;
+}
+@screen md {
+  .nav {
+    @apply block items-center;
+    @apply w-auto;
+  }
+}
+
+.nav ul {
+  @apply text-lg text-gray-700;
+  @apply mt-6;
+}
+@screen md {
+  .nav ul {
+    @apply flex items-center justify-center;
+    @apply mt-0;
+  }
+}
+
+.nav li:hover {
+  @apply text-highlight;
+}
+
+.nav a {
+  @apply block;
+  @apply my-4;
+}
+@screen md {
+  .nav a {
+    @apply mx-4 my-0;
+  }
+}
