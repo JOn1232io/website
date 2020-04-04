@@ -9,9 +9,9 @@ const Header = () => {
 
   return (
     <header>
-      <a href="index.html" className={`name ${styles.name}`}>
+      <Link to="/" className={`name ${styles.name}`}>
         <h1>Project YCRO</h1>
-      </a>
+      </Link>
       <nav className={`nav ${styles.nav} ${isActive ? styles.active : ""}`}>
         <button
           onClick={() => setActive(!isActive)}
