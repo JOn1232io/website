@@ -15,18 +15,18 @@ const IndexPage = () => (
       <div className="md:w-2/3 w-full flex flex-col" style={{ height: "85vh" }}>
         <div className="flex" style={{ height: "50%" }}>
           <Chart className="mb-4 w-1/2 mr-4" caption="Caption.">
-            Chart
+            <p>Chart</p>
           </Chart>
           <Chart className="mb-4 w-1/2 ml-4" caption="Caption.">
-            Chart
+            <p>Chart</p>
           </Chart>
         </div>
         <div className="flex" style={{ height: "50%" }}>
           <Chart className="mb-4 w-1/2 mr-4" caption="Caption.">
-            Chart
+            <p>Chart</p>
           </Chart>
           <Chart className="mb-4 w-1/2 ml-4" caption="Caption.">
-            Chart
+            <p>Chart</p>
           </Chart>
         </div>
       </div>

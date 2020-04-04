@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
           boxShadow: `inset 0 0.125rem 0.25rem -0.25rem black`,
         }}
       >
-        <p className>&copy; {new Date().getFullYear()}</p>
+        <p>&copy; {new Date().getFullYear()}</p>
       </footer>
     </div>
   );

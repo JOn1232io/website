@@ -1,0 +1,45 @@
+mission: |
+  We are a group of TJ students interested in the independent
+  production of masks and other materials that are in very short
+  supply during the COVID-19 pandemic. Our purpose is to organize
+  households across the DMV into a production center for masks and
+  other materials to ship to sites around the US in dire need of them.
+  Epicenters of the outbreak, including New York City, Seattle, and
+  Chicago, are being contacted to gauge what materials are in need.
+
+content:
+  - category: Web Development
+    members:
+      - name: Akash Bhave
+      - name: Aryan Chinnala
+      - name: Jason Klein
+      - name: Jennifer Abraham
+      - name: Nuha Mohammed
+      - name: Saigautam Bonam
+      - name: Varun Chilukuri
+
+  - category: Manufacturing
+    members:
+      - name: Aryan Joshi
+      - name: Jacob Consalvi
+      - name: Josh Sez Hi
+      - name: Nitin Elavarasu
+      - name: Priyanka Mosur
+      - name: Tharun Saravanan
+
+  - category: Research
+    members:
+      - name: Adele Pang
+      - name: Julia Kao-Sowa
+      - name: Maria Izzi
+      - name: Vishal Kanigicherla
+
+  - category: Outreach
+    members:
+      - name: Angie Huang
+      - name: Annabel Li
+      - name: John Kim
+      - name: Khushmeet Chandi
+      - name: Marian Qian
+      - name: Maxwell Bai
+      - name: Vyomika Gandhi
