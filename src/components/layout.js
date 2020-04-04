@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
     <div className="font-sans bg-light text-dark flex flex-col min-h-screen">
       <div className="flex-1 flex flex-col">
         <Header className="flex-shrink-0" />
-        <main className="flex-1" id="main" style={{ margin: "3rem 0 0 0" }}>
+        <main className="flex-1" id="main" style={{ margin: "3rem 0 0" }}>
           {children}
         </main>
       </div>

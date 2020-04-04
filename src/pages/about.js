@@ -1,17 +1,14 @@
 import React from "react";
-// import ReactMarkdown from "react-markdown";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import data from "../data/about.yml";
 
-// import Chart from "../components/chart";
-
 const AboutPage = () => (
   <Layout>
     <SEO title="About" />
     <section className="flex flex-wrap p-4">
-      <article className="article my-16 mx-auto">
+      <article className="article mt-16 mb-20 mx-auto">
         <h1 className="py-2 px-4 text-dark uppercase text-4xl text-center font-bold">
           Our Mission
         </h1>
