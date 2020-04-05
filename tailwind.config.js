@@ -10,7 +10,7 @@ module.exports = {
 
     fontFamily: {
       sans: [
-        "Inter",
+        "Barlow",
         "-apple-system",
         "BlinkMacSystemFont",
         '"Segoe UI"',
