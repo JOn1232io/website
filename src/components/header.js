@@ -9,33 +9,33 @@ const Header = () => {
 
   return (
     <header>
-      <Link to="/" className={`name ${styles.name}`}>
+      <Link to="/" className={styles.name}>
         <h1>Project YCRO</h1>
       </Link>
-      <nav className={`nav ${styles.nav} ${isActive ? styles.active : ""}`}>
+      <nav className={`${styles.nav} ${isActive ? styles.active : ""}`}>
         <button
           onClick={() => setActive(!isActive)}
           className={`hamburger ${styles.hamburger}`}
           type="button"
         >
-          <div className={`hamburger__lines ${styles.hamburger__lines}`}>
-            <span className={` ${styles.hamburger__line}`}></span>
-            <span className={` ${styles.hamburger__line}`}></span>
-            <span className={` ${styles.hamburger__line}`}></span>
+          <div>
+            <span className={styles.hamburgerLine}></span>
+            <span className={styles.hamburgerLine}></span>
+            <span className={styles.hamburgerLine}></span>
           </div>
         </button>
-        <Link to="/" className={`nav__link ${styles.nav__link}`}>
+        <Link to="/" className={styles.navLink}>
           <span>Home</span>
         </Link>
-        <Link to="/contact" className={`nav__link ${styles.nav__link}`}>
+        <Link to="/contact" className={styles.navLink}>
           <span>Contact</span>
         </Link>
-        <Link to="/about" className={`nav__link ${styles.nav__link}`}>
+        <Link to="/about" className={styles.navLink}>
           <span>About</span>
         </Link>
         <a
           href="https://www.paypal.com"
-          className={`nav__link ${styles.nav__link}`}
+          className={styles.navLink}
           target="_blank"
         >
           <span>Donate</span>
