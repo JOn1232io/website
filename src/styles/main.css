@@ -24,3 +24,15 @@
     @apply hidden;
   }
 }
+
+/* Transitions */
+.transition-standard {
+  transition: all 0.25s ease;
+}
+
+.link-text a {
+  @apply text-highlight;
+}
+.link-text a:hover {
+  @apply underline;
+}
