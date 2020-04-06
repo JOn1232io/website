@@ -20,6 +20,14 @@ module.exports = {
       },
     },
     `gatsby-plugin-postcss`,
+    // {
+    // resolve: 'gatsby-source-google-sheets',
+    // options: {
+    //  spreadsheetId: '1_bZheUOFAcYnmUXDwCRR0rLXt2jqg9drwI2ZlmPxI-k',
+    //  worksheetTitle: 'Hospitals - NOVA',
+    //  credentials: require('./credentials/data.json')
+    // }
+},
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
