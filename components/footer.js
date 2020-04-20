@@ -3,7 +3,9 @@ import styles from "./footer.module.css"
 
 const Footer = () => (
 	<footer className={styles.footer}>
-		<p className={styles.copyright}>&copy; 2020</p>
+		<p className={styles.copyright}>
+			Copyright &copy; 2020 <b>Youth Covid-19 Relief Organization</b>. All rights reserved.
+		</p>
 		<section className={styles.socials}>
 			<a className={styles.link} href="https://www.facebook.com/projectycro/" target="_blank">
 				<FiFacebook />
