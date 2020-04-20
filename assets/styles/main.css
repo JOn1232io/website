@@ -7,18 +7,19 @@
 @import "./markdown.css";
 
 * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 body {
-  @apply leading-relaxed;
+	@apply leading-relaxed;
+	background-color: #f5f5f5;
 }
 
 .trans {
-  transition: all 0.25s ease;
+	transition: all 0.25s ease;
 }
 
 .heading {
-  display: inline-block;
-  @apply border-b-4 border-accent pb-0 mb-6;
+	display: inline-block;
+	@apply border-b-4 border-accent pb-0 mb-6;
 }
