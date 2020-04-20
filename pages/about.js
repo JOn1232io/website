@@ -13,9 +13,7 @@ const Team = ({ title, description, members }) => {
 			<h2 style={{ marginTop: title === "Founder & Coordinator" ? "0" : "3rem" }} className={styles.header2}>
 				<b>{title}</b>
 			</h2>
-			<p style={{ marginBottom: "1rem" }}>
-				<Markdown>{description}</Markdown>
-			</p>
+			<Markdown>{description}</Markdown>
 			<section className={styles.members} style={{ ["--count"]: members.length }}>
 				{members.map(member => (
 					<a
