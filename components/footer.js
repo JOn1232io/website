@@ -1,20 +1,18 @@
-import { FiInstagram, FiFacebook } from "react-icons/fi";
+import { FiInstagram, FiFacebook } from "react-icons/fi"
+import styles from "./footer.module.css"
 
 const Footer = () => (
-  <footer className="p-8 bg-dark text-light flex">
-    <div className="md:w-1/2 w-full">
-      Copyright &copy; 2020 <strong>Youth COVID-19 Relief Organization</strong>.
-      All rights reserved.
-    </div>
-    <div className="md:w-1/2 w-full flex justify-end text-2xl">
-      <a className="mx-2" href="https://www.facebook.com/projectycro/">
-        <FiFacebook />
-      </a>
-      <a className="mx-2" href="https://www.instagram.com/projectycro/?hl=en">
-        <FiInstagram />
-      </a>
-    </div>
-  </footer>
-);
+	<footer class={styles.footer}>
+		<p class={styles.copyright}>&copy; 2020</p>
+		<section class={styles.socials}>
+			<a className={styles.link} href="https://www.facebook.com/projectycro/" target="_blank">
+				<FiFacebook />
+			</a>
+			<a className={styles.link} href="https://www.instagram.com/projectycro/?hl=en" target="_blank">
+				<FiInstagram />
+			</a>
+		</section>
+	</footer>
+)
 
-export default Footer;
+export default Footer
