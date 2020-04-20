@@ -13,7 +13,7 @@ const Team = ({ title, description, members }) => {
 			<h2 style={{ marginTop: title === "Founder & Coordinator" ? "0" : "3rem" }} className={styles.header2}>
 				<b>{title}</b>
 			</h2>
-			<Markdown>{description}</Markdown>
+			<Markdown className={styles.description}>{description}</Markdown>
 			<section className={styles.members} style={{ ["--count"]: members.length }}>
 				{members.map(member => (
 					<a
@@ -46,11 +46,14 @@ const AboutPage = ({ data }) => {
 						Our Mission
 					</h1>
 					<section className={styles.container}>
-						<p style={{ margin: "auto 10% 5rem 10%", lineHeight: "250%", textAlign: "center" }}>
-							<Markdown
-								style={{ margin: "auto 10% 5rem 10%", lineHeight: "250%", textAlign: "center" }}>
-								{data.mission}
-							</Markdown>
+						<p
+							style={{
+								margin: "auto 10% 5rem 10%",
+								lineHeight: "250%",
+								textAlign: "center",
+								fontSize: "115%",
+							}}>
+							<Markdown>{data.mission}</Markdown>
 						</p>
 					</section>
 				</article>

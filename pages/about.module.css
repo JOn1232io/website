@@ -17,6 +17,10 @@
 	font-size: 1.5rem;
 }
 
+.description {
+	font-size: 115%;
+}
+
 .content .team .header2 {
 	font-weight: normal;
 	margin-top: 2rem;

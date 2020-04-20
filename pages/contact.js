@@ -43,11 +43,14 @@ const ContactPage = ({ data }) => {
 						{data.title}
 					</h1>
 					<section>
-						<p style={{ margin: "auto 10% 5rem 10%", lineHeight: "250%", textAlign: "center" }}>
-							<Markdown
-								style={{ margin: "auto 10% 5rem 10%", lineHeight: "250%", textAlign: "center" }}>
-								{data.subtitle}
-							</Markdown>
+						<p
+							style={{
+								margin: "auto 10% 5rem 10%",
+								lineHeight: "250%",
+								textAlign: "center",
+								fontSize: "115%",
+							}}>
+							<Markdown>{data.subtitle}</Markdown>
 							{formResult === null || (
 								<p className={`text-xl ${formResult.success ? "text-green-600" : "text-red-700"}`}>
 									{formResult.message}
