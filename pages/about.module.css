@@ -1,0 +1,68 @@
+.content {
+	margin: 0 1rem;
+}
+
+.content .team {
+	margin-bottom: 1rem;
+	box-shadow: 0 0.125rem 0.125rem -0.125rem black;
+}
+
+.content .team .header1 {
+	padding: 0.5rem 2rem;
+	background-color: #304352;
+	color: #f5f5f5;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.content .team .header2 {
+	font-weight: normal;
+	margin-top: 2rem;
+	margin-bottom: 0.5rem;
+	font-size: 1.5rem;
+}
+
+.content .team .header2:first-of-type {
+	margin-top: 0;
+}
+
+.content .team .container {
+	padding: 1rem;
+	background-color: white;
+	color: #304352;
+}
+
+.content .team .container .members {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+	max-width: calc(var(--count) * 18.5rem);
+	gap: 1rem;
+}
+
+.content .team .container .members .member {
+	background-color: #e44c65;
+	color: white;
+	padding: 1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	box-shadow: 0 0.125rem 0.125rem -0.125rem black;
+}
+
+.spacing {
+	visibility: hidden;
+}
+
+@media only screen and (max-width: 640px) {
+	.content .team .container .members {
+		grid-template-columns: 1fr;
+		max-width: initial;
+	}
+}
+
+@media only screen and (max-width: 19rem) {
+	.content .team .container .members {
+		grid-template-columns: 1fr;
+	}
+}
