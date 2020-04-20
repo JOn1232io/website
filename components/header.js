@@ -1,71 +1,67 @@
-import React, { useState } from "react";
-import Link from "next/link";
+import React, { useState } from "react"
+import Link from "next/link"
 
-import Logo from "../assets/images/brand/mask.svg";
-
-const NavLink = ({ href, title, end }) => (
-  <Link href={href}>
-    <a
-      className={`block mt-4 lg:inline-block lg:mt-0 text-gray-700 hover:text-dark ${
-        end || false ? "" : "mr-4"
-      }`}
-    >
-      {title}
-    </a>
-  </Link>
-);
+import Logo from "../assets/images/brand/mask.svg"
+import styles from "./header.module.css"
 
 const Header = () => {
-  const [isActive, setActive] = useState(false);
-  return (
-    <header
-      id="header"
-      className="flex items-center justify-between flex-wrap p-8 container mx-auto"
-    >
-      <div className="flex-shrink-0 mr-8">
-        <Link href="/">
-          <a className="flex items-center font-bold text-2xl tracking-tight">
-            <img src={Logo} alt="Logo" className="h-12 mr-4" />
-            <span>Project YCRO</span>
-          </a>
-        </Link>
-      </div>
-      <div className="block lg:hidden">
-        <button
-          onClick={() => setActive(!isActive)}
-          className={`hamburger hamburger--3dxy ${isActive ? "is-active" : ""}`}
-          aria-label="Menu"
-          aria-controls="navigation"
-          type="button"
-        >
-          <span className="hamburger-box">
-            <span className="hamburger-inner"></span>
-          </span>
-        </button>
-      </div>
-      <nav
-        className={`w-full flex-grow lg:flex lg:items-center lg:w-auto ${
-          isActive ? "block" : "hidden"
-        } `}
-      >
-        <div className="text-lg lg:flex-grow">
-          <NavLink href="/about" title="About" />
-          <NavLink href="/contact" title="Contact" end={true} />
-        </div>
-        <div className="text-lg">
-          <NavLink href="/ppe-request" title="Request PPE" />
-          <NavLink href="/ppe-donate" title="Donate PPE" end={true} />
-        </div>
-      </nav>
-      <style jsx>{`
-        .hamburger-inner,
-        .hamburger-inner::after,
-        .hamburger-inner::before {
-          height: 3px;
-        }
-      `}</style>
-    </header>
-  );
-};
+	const [isActive, setActive] = useState(false)
 
-export default Header;
+	return (
+		<header className={styles.header}>
+			<Link href="/">
+				<a href="/" className={styles.name}>
+					<img
+						className={styles.logo}
+						src={Logo}
+						alt="Logo"
+						style={{ transform: "translateY(-2.5px)", marginRight: "1rem", width: "3rem" }}
+					/>
+					<h1>Project YCRO</h1>
+				</a>
+			</Link>
+			<nav className={`${styles.nav} ${isActive ? styles.active : ""}`}>
+				<button
+					className={styles.hamburger}
+					type="button"
+					onClick={() => {
+						setActive(!isActive)
+					}}>
+					<div className={styles.hamburger__lines}>
+						<span className={styles.hamburger__line}></span>
+						<span className={styles.hamburger__line}></span>
+						<span className={styles.hamburger__line}></span>
+					</div>
+				</button>
+
+				<Link href="/">
+					<a href="/" className={styles.nav__link}>
+						<span>Home</span>
+					</a>
+				</Link>
+				<Link href="/requestppe">
+					<a href="/requestppe" className={styles.nav__link}>
+						<span>Request PPE</span>
+					</a>
+				</Link>
+				<Link href="/donateppe">
+					<a href="/donateppe" className={styles.nav__link}>
+						<span>Donate PPE</span>
+					</a>
+				</Link>
+				<Link href="/contact">
+					<a href="/contact" className={styles.nav__link}>
+						<span>Contact</span>
+					</a>
+				</Link>
+				<Link href="/about">
+					<a href="/about" className={styles.nav__link}>
+						<span>About</span>
+					</a>
+				</Link>
+			</nav>
+		</header>
+	)
+}
+
+export default Header
