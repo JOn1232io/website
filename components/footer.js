@@ -2,9 +2,9 @@ import { FiInstagram, FiFacebook } from "react-icons/fi"
 import styles from "./footer.module.css"
 
 const Footer = () => (
-	<footer class={styles.footer}>
-		<p class={styles.copyright}>&copy; 2020</p>
-		<section class={styles.socials}>
+	<footer className={styles.footer}>
+		<p className={styles.copyright}>&copy; 2020</p>
+		<section className={styles.socials}>
 			<a className={styles.link} href="https://www.facebook.com/projectycro/" target="_blank">
 				<FiFacebook />
 			</a>

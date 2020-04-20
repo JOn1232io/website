@@ -34,7 +34,7 @@ const HomePage = ({ data }) => {
 	return (
 		<>
 			<SEO title="home" />
-			<main style={{ backgroundColor: "#F5F5F5" }}>
+			<main>
 				<article className={`${styles.article} ${styles.title}`}>
 					<Markdown className={styles.heading}>{data.title}</Markdown>
 					<section className={styles.container}>

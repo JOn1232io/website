@@ -39,13 +39,13 @@ const Header = () => {
 						<span>Home</span>
 					</a>
 				</Link>
-				<Link href="/requestppe">
-					<a href="/requestppe" className={styles.nav__link}>
+				<Link href="/ppe-request">
+					<a href="/ppe-request" className={styles.nav__link}>
 						<span>Request PPE</span>
 					</a>
 				</Link>
-				<Link href="/donateppe">
-					<a href="/donateppe" className={styles.nav__link}>
+				<Link href="/ppe-donate">
+					<a href="/ppe-donate" className={styles.nav__link}>
 						<span>Donate PPE</span>
 					</a>
 				</Link>
